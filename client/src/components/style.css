@@ -1,0 +1,19 @@
+.message-bubble {
+    position: relative;
+  }
+  .message-bubble:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    top: 10px;
+  }
+  .message-bubble.sender:after {
+    border-left-color: #1976d2;
+    right: -10px;
+  }
+  .message-bubble.receiver:after {
+    border-right-color: #f5f6f7;
+    left: -10px;
+  }
